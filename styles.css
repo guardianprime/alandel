@@ -44,3 +44,10 @@
 
 @media (min-width: 892px) and (max-width: 1004px) {
 }
+
+/* FOR TESTING */
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: aqua;
+}
