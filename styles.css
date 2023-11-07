@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@100;400;700&family=Montserrat&family=Open+Sans:wght@500&family=Poppins:ital,wght@1,300&family=Rajdhani:wght@300&display=swap");
+
+input,
+button {
+  font-family: inherit;
+}
+
 .navbar-nav:first-of-type {
   display: flex;
   justify-content: space-between;
@@ -6,6 +13,15 @@
 .navbar-nav:last-of-type {
   display: flex;
   justify-content: space-around;
+}
+
+/* BUTTON POSITIONING */
+#stay {
+  margin-top: 70px;
+}
+
+#stay2 {
+  margin-top: 115px;
 }
 
 /* MEDIA QUERY FOR LARGE SCREENS */
