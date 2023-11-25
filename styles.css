@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lato:wght@100;400;700&family=Montserrat&family=Open+Sans:wght@500&family=Poppins:ital,wght@1,300&family=Rajdhani:wght@300&display=swap");
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 input,
 button {
   font-family: inherit;
@@ -16,12 +20,17 @@ button {
 }
 
 /* BUTTON POSITIONING */
+
 #stay {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
-#stay2 {
-  margin-top: 115px;
+#stayTwo {
+  margin-top: 58px;
+}
+
+#stayThree {
+  margin-top: 158px;
 }
 
 /* MEDIA QUERY FOR LARGE SCREENS */
@@ -65,5 +74,46 @@ button {
 footer {
   width: 100%;
   height: 40vh;
-  background-color: aqua;
+}
+
+li div {
+  /* 
+  outline: 2px solid green;
+  background-color: goldenrod; */
+  width: 10%;
+}
+
+/* LIST STYLING REMOVAL FOR THE FOOTER LISTS AND LINKS */
+
+.footer__ul li {
+  list-style-type: none;
+}
+
+.footer__ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* STYLE FOR THE REVIEW GOOGLE AND APPLE DIVS */
+.review__container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  height: 80px;
+  margin: auto;
+}
+.review__div--container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
+}
+.review__div--wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.review__div--wrap p {
+  margin: 0;
 }
