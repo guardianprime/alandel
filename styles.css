@@ -9,6 +9,15 @@ button {
   font-family: inherit;
 }
 
+:root {
+  --CARD-BG-COLOR: #1098f7;
+  --CARD-BG-COLOR2: #66bcfa;
+  --CARD-SHADOW: #0567ad;
+  --HIGHLIGHT-COLOR: #ec7357;
+  --HIGHLIGHT-COLOR2: #fec601;
+  --SECTION-BG-COLOR: #174362;
+}
+
 .navbar-nav:first-of-type {
   display: flex;
   justify-content: space-between;
@@ -19,6 +28,16 @@ button {
   justify-content: space-around;
 }
 
+#login {
+  background-color: var(--SECTION-BG-COLOR);
+  border-radius: 5px;
+}
+
+#signup {
+  border: 2px solid var(--SECTION-BG-COLOR);
+  border-radius: 5px;
+}
+
 /* BUTTON POSITIONING */
 
 #stay {
@@ -26,11 +45,17 @@ button {
 }
 
 #stayTwo {
-  margin-top: 58px;
+  margin-top: 78px;
 }
 
 #stayThree {
-  margin-top: 158px;
+  margin-top: 178px;
+}
+
+/* NAV STYLING   */
+nav {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px;
 }
 
 /* MEDIA QUERY FOR LARGE SCREENS */
@@ -71,18 +96,6 @@ button {
 }
 
 /* FOR TESTING */
-footer {
-  width: 100%;
-  height: 40vh;
-}
-
-li div {
-  /* 
-  outline: 2px solid green;
-  background-color: goldenrod; */
-  width: 10%;
-}
-
 /* LIST STYLING REMOVAL FOR THE FOOTER LISTS AND LINKS */
 
 .footer__ul li {
@@ -92,6 +105,33 @@ li div {
 .footer__ul li a {
   text-decoration: none;
   color: black;
+}
+
+.footer__section--last {
+  height: 110px;
+}
+
+.footer__section--last p {
+  margin: 0;
+}
+
+/* THE WRAPPER FOR BOTH MANAGE AND REVIEW SECTIONS */
+.big-wrapper {
+  background-color: var(--SECTION-BG-COLOR);
+  padding: 20px;
+}
+
+.white {
+  color: white;
+}
+/* MANAGE SECTION AND ITS DIVS */
+.manage__section {
+  width: 100%;
+}
+.icons__card {
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px;
+  background-color: var(--CARD-BG-COLOR);
 }
 
 /* STYLE FOR THE REVIEW GOOGLE AND APPLE DIVS */
@@ -116,4 +156,30 @@ li div {
 
 .review__div--wrap p {
   margin: 0;
+}
+
+/* HOVER STYLING FOR THE ELEMENTS */
+
+/* COLORS */
+.card {
+  background-color: var(--CARD-BG-COLOR2);
+  box-shadow: 2px 2px 15px;
+}
+
+.small {
+  font-size: 0.9rem;
+}
+
+.small__card {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.div__wrap--item {
+  color: var(--HIGHLIGHT-COLOR2);
+}
+
+#getStarted {
+  background-color: var(--CARD-BG-COLOR2);
+  border-radius: 30px;
 }

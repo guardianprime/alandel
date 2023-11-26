@@ -21,9 +21,7 @@
     <title>Alandel</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-dark navbar-dark py-2 nav-fill w-100% fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg py-2 nav-fill w-100% fixed-top">
       <div class="container-fluid">
         <a href="#" class="navbar-brand"
           ><img
@@ -103,10 +101,12 @@
           </ul>
           <ul class="navbar-nav ms-auto">
             <li class="item">
-              <a href="#login" class="nav-link text-center">Log in</a>
+              <a href="#login" id="login" class="nav-link text-center"
+                >Log in</a
+              >
             </li>
             <li class="item">
-              <a href="#signup" class="nav-link active text-center"
+              <a href="#signup" id="signup" class="nav-link active text-center"
                 >Start Free</a
               >
             </li>
@@ -116,7 +116,7 @@
     </nav>
     <div class="container-fluid p-4 mt-5">
       <div class="container p-1 w-100 w-md-50 text-center">
-        <h2 class="">Plans & Pricing</h2>
+        <h2 class="">Pick the best plan for your business</h2>
       </div>
 
       <!-- BODY SECTION -->
@@ -124,16 +124,16 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100 p-2">
-              <h3 class="text-center">starter</h3>
-
+              <h3 class="text-center">Starter</h3>
               <div class="card-body">
                 <h2 class="card-title text-center">
                   <sup>$ </sup><span>24</span><sub> /MONTH</sub>
                 </h2>
-                <h6>
+                <h6 class="small">
                   Ideal for freelancers and contractors just starting out.
                   Billed annually.
                 </h6>
+                <hr />
                 <p class="card-text">
                   <i class="fa-solid fa-check"></i> All Templates
                 </p>
@@ -176,10 +176,11 @@
                 <h2 class="card-title text-center">
                   <sup>$ </sup><span>34</span><sub> /MONTH</sub>
                 </h2>
-                <h6>
+                <h6 class="small">
                   Everything a growing independent business needs to thrive.
                   Billed annually.
                 </h6>
+                <hr />
                 <p class="card-text">
                   <i class="fa-solid fa-check"></i> Everything in Starter, plus:
                 </p>
@@ -222,10 +223,11 @@
                 <h2 class="card-title text-center">
                   <sup>$ </sup><span>74</span><sub> /MONTH</sub>
                 </h2>
-                <h6>
+                <h6 class="small">
                   The perfect package for small businesses and agencies. Billed
                   annually.
                 </h6>
+                <hr />
                 <p class="card-text">
                   <i class="fa-solid fa-check"></i>
                   Everything in Professional, plus:
@@ -270,7 +272,7 @@
         <h3 class="text-center mt-5">Super charge your work with add-ons</h3>
       </div>
       <div
-        class="container p-4 my-4 d-md-flex flex-row-reverse justify-content-md-between align-items-center"
+        class="container p-4 my-4 d-md-flex flex-row-reverse justify-content-md-between align-items-center small__card"
       >
         <div class="item fs-1">Free</div>
         <div class="item">
@@ -282,7 +284,7 @@
         </div>
       </div>
       <div
-        class="container p-4 my-4 d-md-flex flex-row-reverse justify-content-md-between align-items-center"
+        class="container p-4 my-4 d-md-flex flex-row-reverse justify-content-md-between align-items-center small__card"
       >
         <div class="item d-flex flex-column align-items-md-center">
           <span class="fs-1">$9</span><span class="fs-4">/MONTH</span>
@@ -290,13 +292,13 @@
         <div class="item">
           <h4>Partners</h4>
           <p>
-            invite others to use specific projects for limited access and
-            functionality
+            Invite teammates to collaborate on projects, track time and manage
+            clients.
           </p>
         </div>
       </div>
       <div
-        class="container p-4 my-4 d-md-flex flex-row-reverse justify-content-md-between align-items-center"
+        class="container p-4 my-4 d-md-flex flex-row-reverse justify-content-md-between align-items-center small__card"
       >
         <div class="item d-flex flex-column align-items-md-center">
           <span class="fs-1">$15</span><span class="fs-4">/MONTH</span>
@@ -311,188 +313,192 @@
       </div>
     </section>
 
-    <!-- Visual section with icons -->
-    <section class="container">
-      <div class="container-fluid">
-        <h2>It's your business and we're to help it grow.</h2>
-      </div>
-      <div class="container" id="mdae">
-        <div class="row">
-          <div class="col-md g-col-md-2 my-2">
-            <h3 class="text-center">Manage Projects</h3>
-            <div class="w-70">
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-users"></i>
-                  </div>
-                  <span class="w-50">Collaborations</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                  </div>
-                  <span class="w-50">Invoicing</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-clock"></i>
-                  </div>
-                  <span class="w-50">Time tracking</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-square-check"></i>
-                  </div>
-                  <span class="w-50">Project Management</span>
-                </li>
-              </ul>
+    <section class="big-wrapper">
+      <!-- Visual section with icons -->
+      <section class="manage__section">
+        <div class="container-fluid">
+          <h2 class="text-center white">
+            It's your business and we're to help it grow.
+          </h2>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md g-col-md-2 m-2 icons__card">
+              <h3 class="text-center">Manage Projects</h3>
+              <div class="w-70">
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-users"></i>
+                    </div>
+                    <span class="w-50">Collaborations</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <span class="w-50">Invoicing</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <span class="w-50">Time tracking</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-square-check"></i>
+                    </div>
+                    <span class="w-50">Project Growth</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-md g-col-md-2 my-2">
-            <h3 class="text-center">Manage clients</h3>
-            <div class="w-70">
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-paper-plane item"></i>
-                  </div>
-                  <span class="w-50">Contracts</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <span class="w-50">Forms</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-calendar"></i>
-                  </div>
-                  <span class="w-50">Scheduling</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-file-invoice"></i>
-                  </div>
-                  <span class="w-50">Client CRM</span>
-                </li>
-              </ul>
+            <div class="col-md g-col-md-2 m-2 icons__card">
+              <h3 class="text-center">Manage clients</h3>
+              <div class="w-70">
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-paper-plane item"></i>
+                    </div>
+                    <span class="w-50">Contracts</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <span class="w-50">Forms</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <span class="w-50">Scheduling</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <span class="w-50">Client CRM</span>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="col-md g-col-md-2 my-2">
-            <h3 class="text-center">Manage finances</h3>
-            <div class="w-70">
-              <ul class="list-unstyled">
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-money-check-dollar w-40"></i>
-                  </div>
-                  <span class="w-50">Payments</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-chart-column w-40"></i>
-                  </div>
-                  <span class="w-50">Expense Tracking</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-file-invoice-dollar w-40"></i>
-                  </div>
-                  <span class="w-50">Tax Helper</span>
-                </li>
-                <li class="d-flex justify-content-around">
-                  <div>
-                    <i class="fa-solid fa-building-columns"></i>
-                  </div>
-                  <span class="w-50">Banking</span>
-                </li>
-              </ul>
+            <div class="col-md g-col-md-2 m-2 icons__card">
+              <h3 class="text-center">Manage finances</h3>
+              <div class="w-70">
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-money-check-dollar w-40"></i>
+                    </div>
+                    <span class="w-50">Payments</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-chart-column w-40"></i>
+                    </div>
+                    <span class="w-50">Expense Tracking</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-file-invoice-dollar w-40"></i>
+                    </div>
+                    <span class="w-50">Tax Helper</span>
+                  </li>
+                  <li class="d-flex justify-content-around">
+                    <div>
+                      <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <span class="w-50">Banking</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- SECTION WITH REVIEWS ANDM COMPANIES -->
-    <section class="review my-5">
-      <h3 class="text-center">Trusted by over 2000+ business Owners</h3>
-      <div class="review__container py-2">
-        <div class="review__div--container">
-          <svg
-            width="50px"
-            height="50px"
-            viewBox="-3 0 262 262"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="xMidYMid"
-          >
-            <path
-              d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
-              fill="#4285F4"
-            />
-            <path
-              d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
-              fill="#34A853"
-            />
-            <path
-              d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
-              fill="#FBBC05"
-            />
-            <path
-              d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
-              fill="#EB4335"
-            />
-          </svg>
-          <div class="review__div--wrap">
-            <p class="div__wrap--item">Top Software</p>
-            <div class="div__wrap--item">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-          </div>
-        </div>
-        <div class="review__div--container">
-          <svg
-            width="50px"
-            height="50px"
-            viewBox="0 0 24 24"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <title>ic_fluent_app_store_24_regular</title>
-            <desc>Created with Sketch.</desc>
-            <g
-              id="🔍-Product-Icons"
-              stroke="none"
-              stroke-width="1"
-              fill="none"
-              fill-rule="evenodd"
+      </section>
+      <!-- SECTION WITH REVIEWS AND COMPANIES -->
+      <section class="review my-5">
+        <h3 class="text-center white">Trusted by over 2000+ business Owners</h3>
+        <div class="review__container py-2">
+          <div class="review__div--container">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="-3 0 262 262"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid"
             >
+              <path
+                d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+                fill="#4285F4"
+              />
+              <path
+                d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+                fill="#34A853"
+              />
+              <path
+                d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+                fill="#FBBC05"
+              />
+              <path
+                d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+                fill="#EB4335"
+              />
+            </svg>
+            <div class="review__div--wrap">
+              <p class="div__wrap-item white">Top Software</p>
+              <div class="div__wrap--item">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="review__div--container">
+            <svg
+              width="50px"
+              height="50px"
+              viewBox="0 0 24 24"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+              <title>ic_fluent_app_store_24_regular</title>
+              <desc>Created with Sketch.</desc>
               <g
-                id="ic_fluent_app_store_24_regular"
-                fill="#212121"
-                fill-rule="nonzero"
+                id="🔍-Product-Icons"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
               >
-                <path
-                  d="M17.75,3 C19.5449254,3 21,4.45507456 21,6.25 L21,17.75 C21,19.5449254 19.5449254,21 17.75,21 L6.25,21 C4.45507456,21 3,19.5449254 3,17.75 L3,6.25 C3,4.45507456 4.45507456,3 6.25,3 L17.75,3 Z M17.75,4.5 L6.25,4.5 C5.28350169,4.5 4.5,5.28350169 4.5,6.25 L4.5,17.75 C4.5,18.7164983 5.28350169,19.5 6.25,19.5 L17.75,19.5 C18.7164983,19.5 19.5,18.7164983 19.5,17.75 L19.5,6.25 C19.5,5.28350169 18.7164983,4.5 17.75,4.5 Z M9.36866957,15.2541207 L8.85939238,16.1263533 C8.65044253,16.4840024 8.19112619,16.6045576 7.83345734,16.395642 C7.50562161,16.2040885 7.37700209,15.8021724 7.5187736,15.4610282 L7.56419595,15.3696993 L7.63066957,15.2541207 L9.36866957,15.2541207 Z M13.2925743,10.0240744 L15.0115743,13.0040744 L16.7518937,13.004946 C17.1315894,13.004946 17.4453846,13.2870999 17.495047,13.6531755 L17.5018937,13.754946 C17.5018937,14.1346418 17.2197398,14.448437 16.8536642,14.4980994 L16.7518937,14.504946 L15.8765743,14.5040744 L16.3788804,15.3741835 C16.5858767,15.7329668 16.462829,16.1916217 16.1040459,16.3986183 C15.7751611,16.5883646 15.3623565,16.5007826 15.1363996,16.2085136 L15.079611,16.1237835 L12.4215743,11.5160744 L13.2925743,10.0240744 Z M13.2631232,7.10145556 C13.590968,7.29299325 13.7195883,7.69490804 13.5778169,8.03605217 L13.5323945,8.12738105 L10.6825761,13.0039285 L12.414,13.004803 L13.279,14.504803 L7.25157613,14.504946 C6.83736256,14.504946 6.50157613,14.1691596 6.50157613,13.754946 C6.50157613,13.3752503 6.78373001,13.0614551 7.14980557,13.0117927 L7.25157613,13.004946 L8.94557613,13.0049285 L11.1265416,9.2709285 L10.464135,8.12385388 C10.2743884,7.79496922 10.3619704,7.38216463 10.6542395,7.15620792 L10.7389696,7.09941939 C11.0678543,6.90967283 11.4806589,6.99725483 11.7066156,7.28952396 L11.7634041,7.37425403 L11.9965416,7.7799285 L12.2372064,7.37073189 C12.446148,7.01307797 12.9054643,6.89252275 13.2631232,7.10145556 Z"
-                  id="🎨-Color"
-                ></path>
+                <g
+                  id="ic_fluent_app_store_24_regular"
+                  fill="#212121"
+                  fill-rule="nonzero"
+                >
+                  <path
+                    d="M17.75,3 C19.5449254,3 21,4.45507456 21,6.25 L21,17.75 C21,19.5449254 19.5449254,21 17.75,21 L6.25,21 C4.45507456,21 3,19.5449254 3,17.75 L3,6.25 C3,4.45507456 4.45507456,3 6.25,3 L17.75,3 Z M17.75,4.5 L6.25,4.5 C5.28350169,4.5 4.5,5.28350169 4.5,6.25 L4.5,17.75 C4.5,18.7164983 5.28350169,19.5 6.25,19.5 L17.75,19.5 C18.7164983,19.5 19.5,18.7164983 19.5,17.75 L19.5,6.25 C19.5,5.28350169 18.7164983,4.5 17.75,4.5 Z M9.36866957,15.2541207 L8.85939238,16.1263533 C8.65044253,16.4840024 8.19112619,16.6045576 7.83345734,16.395642 C7.50562161,16.2040885 7.37700209,15.8021724 7.5187736,15.4610282 L7.56419595,15.3696993 L7.63066957,15.2541207 L9.36866957,15.2541207 Z M13.2925743,10.0240744 L15.0115743,13.0040744 L16.7518937,13.004946 C17.1315894,13.004946 17.4453846,13.2870999 17.495047,13.6531755 L17.5018937,13.754946 C17.5018937,14.1346418 17.2197398,14.448437 16.8536642,14.4980994 L16.7518937,14.504946 L15.8765743,14.5040744 L16.3788804,15.3741835 C16.5858767,15.7329668 16.462829,16.1916217 16.1040459,16.3986183 C15.7751611,16.5883646 15.3623565,16.5007826 15.1363996,16.2085136 L15.079611,16.1237835 L12.4215743,11.5160744 L13.2925743,10.0240744 Z M13.2631232,7.10145556 C13.590968,7.29299325 13.7195883,7.69490804 13.5778169,8.03605217 L13.5323945,8.12738105 L10.6825761,13.0039285 L12.414,13.004803 L13.279,14.504803 L7.25157613,14.504946 C6.83736256,14.504946 6.50157613,14.1691596 6.50157613,13.754946 C6.50157613,13.3752503 6.78373001,13.0614551 7.14980557,13.0117927 L7.25157613,13.004946 L8.94557613,13.0049285 L11.1265416,9.2709285 L10.464135,8.12385388 C10.2743884,7.79496922 10.3619704,7.38216463 10.6542395,7.15620792 L10.7389696,7.09941939 C11.0678543,6.90967283 11.4806589,6.99725483 11.7066156,7.28952396 L11.7634041,7.37425403 L11.9965416,7.7799285 L12.2372064,7.37073189 C12.446148,7.01307797 12.9054643,6.89252275 13.2631232,7.10145556 Z"
+                    id="🎨-Color"
+                  ></path>
+                </g>
               </g>
-            </g>
-          </svg>
-          <div class="review__div--wrap">
-            <p class="div__wrap--item">Best App</p>
-            <div class="div__wrap--item">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-              ><i class="fa-solid fa-star"></i>
+            </svg>
+            <div class="review__div--wrap">
+              <p class="div__wrap-item white">Best App</p>
+              <div class="div__wrap--item">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
 
     <!-- PIC SECTION WITH RECOMMENDATION -->
@@ -506,8 +512,10 @@
         />
       </div>
     </section> -->
+
+    <!-- Get started box -->
     <section>
-      <div class="container w-md-50 p-5 rounded my-3 text-center">
+      <div class="container w-md-50 p-5 my-3 text-center" id="getStarted">
         <h4>Get started in 30 seconds Free for 7 days</h4>
         <button class="btn btn-light btn-lg d-block w-12rem mx-auto">
           Start free trial now
@@ -579,8 +587,9 @@
           </div>
         </div>
       </section>
-      <section class="footer__section text-center p-3">
-        <p>Made with love in Lagos</p>
+      <hr />
+      <section class="footer__section--last text-center p-2">
+        <p>Made with ❤️ in Lagos</p>
         <p>&copy; 2023 Alandel</p>
         <p>Created by <span>Guardianprime</span></p>
       </section>
