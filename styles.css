@@ -75,6 +75,7 @@ nav {
     font-size: larger;
     color: #fff !important;
   }
+
   .navbar-nav:last-of-type li:first-child a {
     color: white;
     font-size: clamp(1rem, 2.2vh, 1.5rem);
@@ -89,6 +90,14 @@ nav {
   .navbar-nav:last-of-type li:last-child a {
     color: black;
     font-weight: 600;
+  }
+
+  .card-text {
+    margin-left: 50px;
+  }
+
+  .fa-check {
+    margin-right: 30px;
   }
 }
 
